@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-# TODO:
-# make GET work
-# proxy through apache?
-
 # postgres:
 # https://stackoverflow.com/questions/55523299/best-practices-for-persistent-database-connections-in-python-when-using-flask
 # https://www.psycopg.org/docs/usage.html
@@ -77,7 +73,6 @@ def tymheredd_post():
         return "Invalid or missing API key", 401
 
     if request.is_json:
-        # TODO: put stuff in db
         data = request.json
         print("data is of type", type(data))
         print("data", data)
